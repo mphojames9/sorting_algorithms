@@ -2,13 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * insertion_sort_list - sorts a doubly linked list of integers in ascending
- * order using the Insertion sort algorithm
- * @list: Double pointer to the head of the linked list
- *
- * Return: void
- */
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *swap_node, *next_swap;

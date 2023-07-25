@@ -1,9 +1,5 @@
 #include "sort.h"
-/**
- * _swap - swap two numbers
- * @a: integer
- * @b: integer
- **/
+
 void _swap(int *a, int *b)
 {
 	int tmp;
@@ -12,11 +8,6 @@ void _swap(int *a, int *b)
 	*a = *b;
 	*b = tmp;
 }
-/**
- * selection_sort - sort array using selection sort algorithm
- * @array: array
- * @size: array size
- **/
 
 void selection_sort(int *array, size_t size)
 {

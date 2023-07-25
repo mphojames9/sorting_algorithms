@@ -1,8 +1,3 @@
-/*
- * File: 3-quick_sort.c
- * Auth: Dagem Tsehay
- */
-
 #include "sort.h"
 
 void swap_ints(int *a, int *b);
@@ -24,16 +19,6 @@ void swap_ints(int *a, int *b)
 	*b = tmp;
 }
 
-/**
- * lomuto_partition - Order a subset of an array of integers according to
- *                    the lomuto partition scheme (last element as pivot).
- * @array: The array of integers.
- * @size: The size of the array.
- * @left: The starting index of the subset to order.
- * @right: The ending index of the subset to order.
- *
- * Return: The final partition index.
- */
 int lomuto_partition(int *array, size_t size, int left, int right)
 {
 	int *pivot, above, below;
@@ -61,13 +46,6 @@ int lomuto_partition(int *array, size_t size, int left, int right)
 	return (above);
 }
 
-/**
- * lomuto_sort - Implement the quicksort algorithm through recursion.
- * @array: An array of integers to sort.
- * @size: The size of the array.
- * @left: The starting index of the array partition to order.
- * @right: The ending index of the array partition to order.
- */
 void lomuto_sort(int *array, size_t size, int left, int right)
 {
 	int part;
@@ -80,12 +58,6 @@ void lomuto_sort(int *array, size_t size, int left, int right)
 	}
 }
 
-/**
- * quick_sort - Sort an array of integers in ascending
- *              order using the quicksort algorithm.
- * @array: An array of integers.
- * @size: The size of the array.
- */
 void quick_sort(int *array, size_t size)
 {
 	if (array == NULL || size < 2)
